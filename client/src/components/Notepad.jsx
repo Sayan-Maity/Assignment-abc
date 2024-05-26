@@ -69,7 +69,8 @@ const Notepad = () => {
 
 
     return (
-        <div className="w-[100%] lg:w-[800px] flex flex-col items-center gap-10 mt-6">
+        <div className="w-[100%] lg:w-[800px] flex flex-col items-center gap-10 mt-[5rem]">
+            <p className='text-3xl font-bold'>📃 Your Personalized Notes</p>
 
             <div className="flex flex-col sm:flex-row gap-4">
                 <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Title" className="rounded-md px-4 py-1 outline-transparent" />
@@ -91,7 +92,7 @@ const Notepad = () => {
                             </div>
                             <button
                                 onClick={() => handleDeleteNotepadItem(item._id)}
-                                className="bg-red-300 px-5 py-2 rounded-md" >Delete</button>
+                                className="bg-red-300 px-5 py-2 rounded-md" >❌ Delete</button>
                         </div>
                     ))
                 }

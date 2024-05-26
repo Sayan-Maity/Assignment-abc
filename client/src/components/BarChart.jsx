@@ -56,7 +56,7 @@ const BarChart = () => {
         ],
     };
     return (
-        <div className='w-[100%] xl:w-[1200px] mt-6'>
+        <div className='w-[100%] xl:w-[1200px] mt-[5rem]'>
             <Bar options={options} data={data} width="100%" height="30vh"/>
         </div>
     )
